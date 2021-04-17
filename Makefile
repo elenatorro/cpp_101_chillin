@@ -4,7 +4,7 @@ CXXFLAGS += -fsanitize=address -fsanitize=undefined # sanitizers
 CXXFLAGS += -Wall -pedantic -Werror -Wextra
 CXXFLAGS += -Wno-unused-but-set-variable -Wno-unused-variable -Wno-unused-parameter
 
-SOURCES = $(wildcard *.cpp)
+SOURCES = $(wildcard sessions/*.cpp)
 BIN_DIR = bin
 BINS = $(foreach binary,$(SOURCES:.cpp=),$(BIN_DIR)/$(binary))
 

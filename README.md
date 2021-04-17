@@ -17,15 +17,29 @@ Twitter: [@BytesAndHumans](https://twitter.com/BytesAndHumans) y
 
 En las distros de Linux Debian-based como Ubuntu,
 
-```
+```sh
 sudo apt install build-essential
 ```
 
 instala tanto gcc, g++, make, bintools y el linker para empezar a funcionar.
 Luego, echamos a andar make a y funcionar:
 
-```
+```sh
 make
+```
+
+## Usando Docker
+
+Si no quieres ensuciar tu entorno, instala Docker y docker-compose y a continuación haz:
+
+```sh
+docker-compose up --build
+```
+
+Recuerda cerrar cuando acabes:
+
+```sh
+docker-compose down
 ```
 
 ## Sesión 1
